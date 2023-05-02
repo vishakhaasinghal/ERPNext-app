@@ -1,0 +1,25 @@
+{%  extends 'templates/web.html' %}
+
+{% block page_content %}
+<div class='py-20 row'>
+    <div class='col-sm-2'>
+        <img alt='Re' src='bird.jpg'>
+    </div>
+    <div class='col'>
+        <h1>REWORK</h1>
+        <p class='lead'>By Ansh</p>
+        <div>
+            {%- if status == 'Available' -%}
+            <span class='badge badge-success'>Available</span>
+            {%- elif status == 'Issued' -%}
+            <span class='badge badge-primary'>Issued</span>
+            {%- endif -%}
+        </div>
+        <div class='mt-4'>
+            <div>Publisher: <strong>Abc</strong></div>
+            <div>ISBN: <strong>1234</strong></div>
+        </div>
+        <p>ttttttttttttttttttttttttttttttttttt</p>
+    </div>
+</div>
+{% endblock %}
