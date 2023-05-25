@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-03 14:21:27.410675",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task_id",
+  "task_title",
+  "project_id",
+  "task_start_date",
+  "task_end_date",
+  "task_status",
+  "amended_from",
+  "project_task_user"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task ID",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "task_title",
+   "fieldtype": "Data",
+   "label": "Task title"
+  },
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "task_start_date",
+   "fieldtype": "Date",
+   "label": "Task Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "task_end_date",
+   "fieldtype": "Date",
+   "label": "Task End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "task_status",
+   "fieldtype": "Select",
+   "label": "Task Status",
+   "options": "New\nWIP\nunder QA\nCompleted"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ProjectTask",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_task_user",
+   "fieldtype": "Table",
+   "label": "Project Task User",
+   "options": "ProjectTaskUser"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-17 14:23:01.264085",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "ProjectTask",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Developers",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "QA",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "role": "Project Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,23 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-05-18 11:58:18.698962",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-05-18 12:40:16.733271",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "Query Report Example",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT task_id as \"Task id\" , task_title as \"Task title\" , project_id as \"Project id\" , task_start_date as \"Start date\" , task_end_date as \"End date\" , \ntask_status as \"Task status\" , COUNT(DISTINCT TPTU.assigned_to) AS user\nFROM `tabProject` TP\n\nINNER JOIN tabProjectTask TPT ON TP.project_id = TPT.project_id\n        INNER JOIN tabProjectTaskUser TPTU ON TPT.task_id = TPTU.parent AND TPTU.parenttype = 'ProjectTask'\n        {0}\n        GROUP BY TP.project_id\n        {1};\n",
+ "ref_doctype": "ProjectTask",
+ "report_name": "Query Report Example",
+ "report_type": "Query Report",
+ "roles": []
+}

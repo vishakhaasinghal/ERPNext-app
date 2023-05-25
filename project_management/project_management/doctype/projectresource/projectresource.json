@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-03 15:56:46.554486",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task_id",
+  "project_id",
+  "user"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Task Id",
+   "options": "ProjectTask",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project Id",
+   "options": "ProjectTask",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-14 21:06:14.401883",
+ "modified_by": "Administrator",
+ "module": "Project Management",
+ "name": "ProjectResource",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
