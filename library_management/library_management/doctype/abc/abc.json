@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "MM.YY.###",
+ "autoname": "P.MM.YY.id.###",
  "creation": "2023-05-02 14:12:05.450013",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -16,7 +16,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "ID",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "name1",
@@ -26,10 +27,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-02 14:16:22.270403",
+ "modified": "2023-05-03 13:59:33.194141",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "abc",
+ "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
   {

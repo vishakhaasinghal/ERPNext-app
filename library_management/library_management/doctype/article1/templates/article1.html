@@ -1,25 +1,46 @@
-{%  extends 'templates/web.html' %}
+{%  extends "templates/web.html" %}
 
 {% block page_content %}
-<div class='py-20 row'>
-    <div class='col-sm-2'>
-        <img alt='Re' src='bird.jpg'>
+
+<div class="py-20 row">
+
+    <div class="col-sm-2">
+
+        <img alt="{{ title }}" src="{{ image }}">
+
     </div>
-    <div class='col'>
-        <h1>REWORK</h1>
-        <p class='lead'>By Ansh</p>
+
+    <div class="col">
+
+        <h1>{{ title }}</h1>
+
+        <p class="lead">By {{ author }}</p>
+
         <div>
+
             {%- if status == 'Available' -%}
-            <span class='badge badge-success'>Available</span>
+
+            <span class="badge badge-success">Available</span>
             {%- elif status == 'Issued' -%}
-            <span class='badge badge-primary'>Issued</span>
+
+            <span class="badge badge-primary">Issued</span>
+
             {%- endif -%}
+
         </div>
-        <div class='mt-4'>
-            <div>Publisher: <strong>Abc</strong></div>
-            <div>ISBN: <strong>1234</strong></div>
+
+        <div class="mt-4">
+
+            <div>Publisher: <strong>{{ publisher }}</strong></div>
+
+            <div>ISBN: <strong>{{ isbn }}</strong></div>
+
         </div>
-        <p>ttttttttttttttttttttttttttttttttttt</p>
+
+        <p>{{ description }}</p>
+
     </div>
+
 </div>
+
 {% endblock %}

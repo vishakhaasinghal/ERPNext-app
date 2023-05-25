@@ -17,7 +17,8 @@
   "route",
   "image",
   "section_break",
-  "description"
+  "description",
+  "published"
  ],
  "fields": [
   {
@@ -73,13 +74,20 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
   }
  ],
  "has_web_view": 1,
  "image_field": "image",
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2023-04-28 21:08:16.519000",
+ "modified": "2023-05-03 10:36:24.047392",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article1",

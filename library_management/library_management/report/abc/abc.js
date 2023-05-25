@@ -4,13 +4,6 @@
 
 frappe.query_reports["abc"] = {
 	"filters": [
-		{
-		"fieldname":"v_name",
-		"label": Vname,
-		"fieldtype": "data",
-		//"options": "Company",
-		"default": frappe.defaults.get_user_default("abc")
-		}
-
+		
 	]
 };
